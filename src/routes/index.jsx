@@ -4,8 +4,12 @@ import DashboardPage from "../pages/client-admin/DashboardPage";
 import CustomerTemplate from "../pages/client-customer";
 import HomePage from "../pages/client-customer/HomePage";
 import MovieDetailPage from "../pages/client-customer/MovieDetailPage";
+import BuyTiket from "../pages/client-customer/BuyTicket";
 import PageNotFound from "../pages/client-error-pages";
 import { Route } from "react-router-dom";
+import About from "../pages/client-customer/About";
+import Support from "../pages/client-customer/Support";
+import Promotions from "../pages/client-customer/Promotions";
 
 const routes = [
   {
@@ -19,6 +23,22 @@ const routes = [
       {
         path: "detail/:id",
         element: MovieDetailPage,
+      },
+      {
+        path: "buy-tickets/:id",
+        element: BuyTiket,
+      },
+      {
+        path: "about",
+        element: About,
+      },
+      {
+        path: "support",
+        element: Support,
+      },
+      {
+        path: "promotion",
+        element: Promotions,
       },
     ],
   },
