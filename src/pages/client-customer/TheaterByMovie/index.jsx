@@ -3,10 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchShowtimesByMovie } from "./slice";
 import TheaterList from "./TheaterList";
 import BranchList from "./BranchList";
-import ShowtimeList from "./ShowtimeList";
+import ShowtimeList from "./ShowTimeList";
 import { motion } from "framer-motion";
 import { Film, MapPin, Hourglass } from "lucide-react";
 
+// eslint-disable-next-line react/prop-types
 export default function TheaterByMovie({ maPhim }) {
   const dispatch = useDispatch();
   const { showtimesByMovie, loading, error } = useSelector(
