@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;/*# sourceMappingURL=index.css.map */
+@tailwind utilities;
+* {
+  font-family: Nunito Sans, sans-serif;
+}/*# sourceMappingURL=index.css.map */

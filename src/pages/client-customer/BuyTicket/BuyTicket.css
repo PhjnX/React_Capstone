@@ -1,0 +1,106 @@
+/* Giao diện nền tối */
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Ghế ngồi */
+.ghe {
+  height: 45px;
+  width: 45px;
+  margin: 6px;
+  background-color: #86efac; /* Xanh lá nhạt */
+  border-radius: 10px;
+  color: black; /* Chữ đen để dễ nhìn */
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.ghe:hover {
+  transform: scale(1.15);
+  background-color: #facc15;
+  cursor: pointer;
+}
+
+.gheDangDat {
+  background-color: #facc15 !important;
+  border-color: #facc15 !important;
+}
+
+.gheDaDat {
+  background-color: #2d2d2d !important;
+  border-color: #2d2d2d !important;
+  cursor: not-allowed;
+  pointer-events: none; /* Vô hiệu hóa mọi sự kiện chuột */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.gheVip {
+  background-color: #ef4444;
+  border-color: #ef4444;
+}
+
+.gheDaDuocDat {
+  background-color: #facc15 !important;
+  border: 1px solid #facc15 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  transform: scale(1.1);
+  background-color: #ff6600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Màn hình chiếu */
+.screen {
+  width: 70%;
+  height: 30px;
+  background: linear-gradient(180deg, #fff, #ccc);
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+/* Thông tin đặt vé */
+.ticket-info {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
