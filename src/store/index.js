@@ -14,8 +14,7 @@ export const store = configureStore({
     userReducer,
     addMovieReducer,
     deleteReducer,
-    // showTimeReducer,
-    // cumRapReducer,
+
     cinemaReducer,
     // Add your child reducer here
   },
