@@ -1,10 +1,15 @@
 import AdminTemplate from "../pages/client-admin";
 import AuthPage from "../pages/client-admin/AuthPage";
 import DashboardPage from "../pages/client-admin/DashboardPage";
+import Quanliphim from "../pages/client-admin/Quanliphim";
+import Quanlinguoidung from "../pages/client-admin/User";
+import UserPage from "../pages/client-admin/UserPage";
 import CustomerTemplate from "../pages/client-customer";
 import HomePage from "../pages/client-customer/HomePage";
 import MovieDetailPage from "../pages/client-customer/MovieDetailPage";
 import PageNotFound from "../pages/client-error-pages";
+import AddMovie from "../pages/client-admin/AddMovie";
+import ShowTime from "../pages/client-admin/ShowTime/index2";
 import { Route } from "react-router-dom";
 
 const routes = [
@@ -30,6 +35,29 @@ const routes = [
         path: "dashboard",
         element: DashboardPage,
       },
+      {
+        path: "quanliphim",
+        element: Quanliphim,
+      },
+      {
+        path:"add-user",
+        element:Quanlinguoidung,
+      },
+      {
+        path:"add-movie",
+        element: AddMovie
+      },
+      {
+        path:"user",
+        element: UserPage
+      },
+      {
+        path: "show-time",
+        element:ShowTime
+      }
+
+
+      
     ],
   },
   {
@@ -58,7 +86,7 @@ export const renderRoutes = () => {
     } else {
       return (
         <Route key={route.path} path={route.path} element={<route.element />} />
-      );
+      );  
     }
   });
 };
