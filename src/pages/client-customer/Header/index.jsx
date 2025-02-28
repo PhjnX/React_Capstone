@@ -89,6 +89,7 @@ export default function Header() {
               <li>{renderNavLink("/about", "About")}</li>
               <li>{renderNavLink("/support", "Support")}</li>
               <li>{renderNavLink("/promotion", "Promotions")}</li>
+              <li>{renderNavLink("/auth", "Admin Page")}</li>
 
               {isLoggedIn && (
                 <li className="md:hidden">
