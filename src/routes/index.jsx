@@ -10,7 +10,7 @@ import MovieDetailPage from "../pages/client-customer/MovieDetailPage";
 import BuyTiket from "../pages/client-customer/BuyTicket";
 import PageNotFound from "../pages/client-error-pages";
 import AddMovie from "../pages/client-admin/AddMovie";
-import ShowTime from "../pages/client-admin/ShowTime/index2";
+import ShowTime from "../pages/client-admin/ShowTime/index";
 import { Route } from "react-router-dom";
 import About from "../pages/client-customer/About";
 import Support from "../pages/client-customer/Support";
@@ -72,7 +72,7 @@ const routes = [
         element: UserPage
       },
       {
-        path: "show-time",
+        path: "show-time/:idFilm",
         element:ShowTime
       }
 

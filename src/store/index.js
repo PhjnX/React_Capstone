@@ -4,9 +4,9 @@ import authReducer from "../pages/client-admin/AuthPage/slice";
 import userReducer from "../pages/client-admin/UserPage/slice";
 import addMovieReducer from "../pages/client-admin/AddMovie/slice"
 import deleteReducer from "../pages/client-admin/Quanliphim/delete"
-// import showTimeReducer from "../pages/client-admin/ShowTime/slice";
+import showTimeReducer from "../pages/client-admin/ShowTime/slice";
 // import cumRapReducer from "../pages/client-admin/ShowTime/sliceCumRap"
-import cinemaReducer from "../pages/client-admin/ShowTime/slice2"
+import cinemaReducer from "../pages/client-admin/ShowTime/slice"
 
 import bannerReducer from "./../pages/client-customer/Carousel/slice";
 import listMovieReducer from "./../pages/client-customer/ListMoviePage/slice";
@@ -25,6 +25,7 @@ export const store = configureStore({
     addMovieReducer,
     deleteReducer,
     cinemaReducer,
+    showTimeReducer,
     // Add your child reducer here
     bannerReducer,
     listMovieReducer,
