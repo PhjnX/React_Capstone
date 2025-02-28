@@ -44,12 +44,12 @@ export default function ShowTime() {
 
   return (
     <div style={{ maxWidth: "400px", margin: "auto", padding: "20px", border: "1px solid #ddd", borderRadius: "8px", boxShadow: "0 0 10px rgba(0,0,0,0.1)" }}>
-      <h2 style={{ textAlign: "center" }}>Tạo lịch chiếu - Avenger 123</h2>
+      <h2 className="text-center text-black font-semibold">Tạo lịch chiếu - Avenger 123</h2>
 
       {loading && <p>Đang tải dữ liệu...</p>}
       {error && <p style={{ color: "red" }}>Lỗi: {error}</p>}
 
-      <form onSubmit={handleTaoLichChieu} style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+      <form onSubmit={handleTaoLichChieu} className="text-black" style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <label>Hệ thống rạp:</label>
         <select value={selectedHeThongRap} onChange={handleSelectHeThongRap} style={{ padding: "8px" }}>
           <option value="">Chọn hệ thống rạp</option>
